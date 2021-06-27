@@ -1,0 +1,31 @@
+/*font Variables*/
+$mon: 'Montserrat', sans-serif;
+$pop: 'Poppins', sans-serif;
+$lato: 'Lato', sans-serif;
+$play: 'Playfair Display', serif;
+
+/*Color Variables*/
+
+$baseColor: #d91522;
+$dip: #0b1033;
+$gray: #999999;
+$pfont: #666666;
+
+
+
+// Mixins
+@mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+.col-md-offset-right-1,.col-lg-offset-right-1{
+    margin-right: 8.33333333%;
+}

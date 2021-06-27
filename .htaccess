@@ -1,0 +1,9 @@
+Options +FollowSymLinks 
+RewriteEngine on 
+RewriteCond %{HTTP_HOST} ^milliykredit.uz 
+RewriteRule (.*) http://www.milliykredit.uz/$1 [R=301,L] 
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/ 
+RewriteRule ^index\.php$ http://www.milliykredit.uz/ [R=301,L]
+ErrorDocument 404 https://www.milliykredit.uz/404.html
+AddType application/octet-stream .rar .doc .mov .avi .pdf .xls .mp4 .jpg
+RewriteEngine On
